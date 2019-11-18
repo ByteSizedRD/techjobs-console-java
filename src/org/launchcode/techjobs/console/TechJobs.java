@@ -113,7 +113,7 @@ public class TechJobs {
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
         if (!someJobs.isEmpty()) {
             System.out.println("*****");
-
+//https://docs.oracle.com/javase/7/docs/api/java/util/Map.html
             for (HashMap<String, String> jobs : someJobs) {
 
                 for (Map.Entry<String, String> job : jobs.entrySet()) {
