@@ -112,17 +112,14 @@ public class TechJobs {
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 
-        if (someJobs.equals(JobData.findAll(String))){
+        if (someJobs.equals(JobData.findAll())){
 
             System.out.println("*****");
 
             for (int i =0; i < someJobs.size(); i++) {
-                System.out.println("*****\n" + "Position type: " + someJobs.get(i).get("position type")+ "\nname: "
-                        + someJobs.get(i).get("name") + "\nemployer: " + someJobs.get(i).get("employer")
-                        + "\nlocation: " someJobs.get(i).get("location") +  "\ncore competency: "
-                        + someJobs.get(i).get("core competency") + "*****\n");
+                System.out.println("*****\n" + "Position type: " + someJobs.get(i).get("position type") + "\nname: " + someJobs.get(i).get("name") + "\nemployer: " + someJobs.get(i).get("employer") + "\nlocation: " + someJobs.get(i).get("location") +  "\ncore competency: " + someJobs.get(i).get("core competency") + "\n*****\n\n");
 
-            for (Map.Entry(<String, String>) job: someJobs.entrySet()) {
+            for (Map.Entry<String, String> job: someJobs.get(i).entrySet()) {
                     System.out.println(job.getKey() + ": " + job.getValue());
                 }
             }
